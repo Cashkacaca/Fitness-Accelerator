@@ -542,7 +542,6 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -1236,6 +1235,49 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-nav__link {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.page-header {
+  background-color: #980b37;
+}
+
+.page-header__inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-header__logo {
+  margin-bottom: -10px;
 }
 
 /* @mixin hover-focus {
