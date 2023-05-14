@@ -1,0 +1,29 @@
+.leading {
+  background: #980b37 image-set(url("../img/leading-desctop.jpg") 1x, url("../img/leading-desctop@2x.jpg") 2x) no-repeat center / cover;
+}
+
+// .leading {
+//   background: #002f67 url("../img/main-background-desctop.jpg") no-repeat center / cover;
+
+//   @include retina {
+//     @include vp-767 {
+//       background: #002f67 url("../img/main-background-mobil@2x.webp") no-repeat center / cover;
+//     }
+
+//     @include vp-1023 {
+//       background: #002f67 url("../img/main-background-tablet@2x.jpg") no-repeat center / cover;
+//     }
+
+//     @media (min-width: $vp-1024) {
+//       background: #002f67 url("../img/main-background-desctop@2x.jpg") no-repeat center / cover;
+//     }
+//   }
+
+//   @include vp-1023 {
+//     background: #002f67 url("../img/main-background-tablet.jpg") no-repeat center / cover;
+//   }
+
+//   @include vp-767 {
+//     background: #002f67 url("../img/main-background-mobil.jpg") no-repeat center / cover;
+//   }
+// }

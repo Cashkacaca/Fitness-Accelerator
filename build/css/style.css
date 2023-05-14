@@ -1280,6 +1280,11 @@ button,
   margin-bottom: -10px;
 }
 
+.leading {
+  background: #980b37 -webkit-image-set(url("../img/leading-desctop.jpg") 1x, url("../img/leading-desctop@2x.jpg") 2x) no-repeat center/cover;
+  background: #980b37 image-set(url("../img/leading-desctop.jpg") 1x, url("../img/leading-desctop@2x.jpg") 2x) no-repeat center/cover;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
