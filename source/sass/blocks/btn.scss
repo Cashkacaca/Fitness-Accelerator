@@ -24,3 +24,15 @@
     opacity: 0.8;
   }
 }
+
+.btn--leading {
+  background-color: inherit;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  border: 4px solid $color-default-white;
+}
