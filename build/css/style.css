@@ -1281,8 +1281,14 @@ button,
 }
 
 .leading {
-  background: #980b37 -webkit-image-set(url("../img/leading-desctop.jpg") 1x, url("../img/leading-desctop@2x.jpg") 2x) no-repeat center/cover;
-  background: #980b37 image-set(url("../img/leading-desctop.jpg") 1x, url("../img/leading-desctop@2x.jpg") 2x) no-repeat center/cover;
+  background-color: #980b37;
+  background-image: -webkit-image-set(url("../img/leading-desctop@2x.jpg") 2x, url("../img/leading-desctop.jpg") 1x);
+  background-image: image-set(url("../img/leading-desctop@2x.jpg") 2x, url("../img/leading-desctop.jpg") 1x);
+  background-image: -webkit-image-set(url("../img/leading-desctop@2x.webp") type("image/webp") 2x, url("../img/leading-desctop.webp") type("image/webp") 1x, url("../img/leading-desctop@2x.jpg") type("image/jpeg") 2x, url("../img/leading-desctop.jpg") type("image/jpeg") 1x);
+  background-image: image-set(url("../img/leading-desctop@2x.webp") type("image/webp") 2x, url("../img/leading-desctop.webp") type("image/webp") 1x, url("../img/leading-desctop@2x.jpg") type("image/jpeg") 2x, url("../img/leading-desctop.jpg") type("image/jpeg") 1x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* @mixin hover-focus {

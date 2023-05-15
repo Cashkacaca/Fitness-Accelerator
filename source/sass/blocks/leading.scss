@@ -1,5 +1,7 @@
 .leading {
-  background: #980b37 image-set(url("../img/leading-desctop.jpg") 1x, url("../img/leading-desctop@2x.jpg") 2x) no-repeat center / cover;
+  // background: #980b37 image-set(url("../img/leading-desctop.jpg") 1x, url("../img/leading-desctop@2x.jpg") 2x) no-repeat center / cover;
+
+  @include adaptive-bg(#980b37, "../img/leading-desctop");
 }
 
 // .leading {
