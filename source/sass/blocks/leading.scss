@@ -1,5 +1,5 @@
 .leading {
-  @include adaptive-bg(#980b37, "../img/leading-desctop");
+  @include adaptive-bg(#980b37, leading-desctop);
 }
 
 .leading__wrapper {
@@ -61,10 +61,6 @@ h1.leading__heading {
 
 .leading__btn {
   padding: 20px 55px;
-  grid-column:2 / 3;
+  grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
-
-// .leading__image{
-//   height: 556px;
-// }

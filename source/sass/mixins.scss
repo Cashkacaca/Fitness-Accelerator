@@ -8,12 +8,20 @@
   background: {
     color: $background;
 
-    image: image-set(url($image + "@2x" + $ext) 2x, url($image + $ext) 1x);
+    image: image-set(
+      url("../img/#{$image}@2x#{$ext}") 2x,
+      url("../img/#{$image}#{$ext}") 1x
+    );
 
-    image: image-set(url($image + "@2x.webp") type("image/webp") 2x,
-        url($image + ".webp") type("image/webp") 1x,
-        url($image + "@2x" + $ext) type("image/jpeg") 2x,
-        url($image + $ext) type("image/jpeg") 1x);
+    /* Св-ва дополняют друг друга для обеспечения кроссбраузерности */
+    /* stylelint-disable declaration-block-no-duplicate-properties */
+    image: image-set(
+      url("../img/#{$image}@2x.webp") type("image/webp") 2x,
+      url("../img/#{$image}.webp") type("image/webp") 1x,
+      url("../img/#{$image}@2x#{$ext}") type("image/jpeg") 2x,
+      url("../img/#{$image}#{$ext}") type("image/jpeg") 1x
+    );
+    /* stylelint-enable declaration-block-no-duplicate-properties */
 
     repeat: no-repeat;
     position: center;
