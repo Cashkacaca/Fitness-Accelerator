@@ -551,14 +551,9 @@ button,
     padding: 0 32px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .container {
-    padding: 0 24px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
+    padding: 0 45px;
   }
 }
 
@@ -1271,6 +1266,14 @@ button,
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+@media (max-width: 1199px) {
+  .main-nav__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
 
 .page-header {
   position: absolute;
@@ -1291,9 +1294,21 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 1199px) {
+  .page-header__inner {
+    padding: 35px 0;
+  }
+}
 
 .page-header__logo {
   margin-bottom: -10px;
+}
+@media (max-width: 1199px) {
+  .page-header__logo {
+    margin-top: -9px;
+    width: 82px;
+    height: 17px;
+  }
 }
 
 .leading {
@@ -1318,6 +1333,11 @@ button,
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 1199px) {
+  .leading__wrapper {
+    padding: 82px 0;
+  }
+}
 
 .leading__text-wrap {
   margin-right: 63px;
@@ -1330,6 +1350,18 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 1199px) {
+  .leading__text-wrap {
+    margin-right: 32px;
+    -ms-grid-columns: 113px 209px;
+    grid-template-columns: 113px 209px;
+    -ms-grid-rows: 23.5% auto 26.4%;
+    grid-template-rows: 23.5% auto 26.4%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 h1.leading__heading {
@@ -1350,6 +1382,11 @@ h1.leading__heading {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
+@media (max-width: 1199px) {
+  h1.leading__heading {
+    font-size: 72px;
+  }
+}
 
 .leading__city {
   margin: 0;
@@ -1369,6 +1406,17 @@ h1.leading__heading {
   grid-row: 1/2;
   -ms-grid-row-align: end;
       align-self: end;
+}
+@media (max-width: 1199px) {
+  .leading__city {
+    margin-right: 2px;
+    padding: 22px 0 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 34px;
+    line-height: 1.2;
+  }
 }
 
 .leading__list {
