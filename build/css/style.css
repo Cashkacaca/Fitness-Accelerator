@@ -1298,9 +1298,9 @@ button,
 
 .leading {
   background-color: #980b37;
+  /* Св-во нужно для обеспечения кроссбраузерности */
   background-image: -webkit-image-set(url("../img/leading-desctop@2x.jpg") 2x, url("../img/leading-desctop.jpg") 1x);
   background-image: image-set(url("../img/leading-desctop@2x.jpg") 2x, url("../img/leading-desctop.jpg") 1x);
-  /* Св-ва дополняют друг друга для обеспечения кроссбраузерности */
   /* stylelint-disable declaration-block-no-duplicate-properties */
   background-image: -webkit-image-set(url("../img/leading-desctop@2x.webp") type("image/webp") 2x, url("../img/leading-desctop.webp") type("image/webp") 1x, url("../img/leading-desctop@2x.jpg") type("image/jpeg") 2x, url("../img/leading-desctop.jpg") type("image/jpeg") 1x);
   background-image: image-set(url("../img/leading-desctop@2x.webp") type("image/webp") 2x, url("../img/leading-desctop.webp") type("image/webp") 1x, url("../img/leading-desctop@2x.jpg") type("image/jpeg") 2x, url("../img/leading-desctop.jpg") type("image/jpeg") 1x);
@@ -1320,15 +1320,21 @@ button,
 }
 
 .leading__text-wrap {
-  margin-right: 65px;
+  margin-right: 63px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 132px 263px;
-  grid-template-columns: 132px 263px;
+  -ms-grid-columns: 132px 265px;
+  grid-template-columns: 132px 265px;
+  -ms-grid-rows: 30.4% auto 26.4%;
+  grid-template-rows: 30.4% auto 26.4%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1.leading__heading {
   margin: 0;
+  padding-top: 10px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   color: #ffffff;
@@ -1336,6 +1342,7 @@ h1.leading__heading {
   line-height: 1.2;
   text-align: right;
   letter-spacing: 0.05em;
+  -webkit-text-stroke: 4px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1346,6 +1353,7 @@ h1.leading__heading {
 
 .leading__city {
   margin: 0;
+  padding-right: 52px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 48px;
@@ -1359,11 +1367,13 @@ h1.leading__heading {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .leading__list {
   margin: 0;
-  padding: 0;
+  padding: 94px 0 0;
   list-style-type: none;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1389,6 +1399,8 @@ h1.leading__heading {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 /* @mixin hover-focus {

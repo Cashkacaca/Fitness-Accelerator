@@ -8,12 +8,12 @@
   background: {
     color: $background;
 
+    /* Св-во нужно для обеспечения кроссбраузерности */
     image: image-set(
       url("../img/#{$image}@2x#{$ext}") 2x,
       url("../img/#{$image}#{$ext}") 1x
     );
 
-    /* Св-ва дополняют друг друга для обеспечения кроссбраузерности */
     /* stylelint-disable declaration-block-no-duplicate-properties */
     image: image-set(
       url("../img/#{$image}@2x.webp") type("image/webp") 2x,
