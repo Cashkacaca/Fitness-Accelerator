@@ -39,12 +39,16 @@ h1.leading__heading {
   text-align: right;
   letter-spacing: 0.05em;
   -webkit-text-stroke: 4px;
+  text-transform: uppercase;
 
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 
   @media (max-width: $vp-1199) {
+    margin-right: -2px;
+    padding-top: 6px;
     font-size: 72px;
+    text-transform: none;
   }
 }
 
@@ -65,9 +69,8 @@ h1.leading__heading {
   align-self: end;
 
   @media (max-width: $vp-1199) {
-    margin-right: 2px;
-    padding: 22px 0 0;
-    align-self: center;
+    margin: 0 2px 0 0;
+    padding: 0;
     font-size: 34px;
     line-height: 1.2;
   }
@@ -79,6 +82,11 @@ h1.leading__heading {
   list-style-type: none;
   grid-column: 1 /2;
   grid-row: 2 / 3;
+
+  @media (max-width: $vp-1199) {
+    padding: 56px 0 0;
+    align-self: center;
+  }
 }
 
 .leading__item {
@@ -90,9 +98,7 @@ h1.leading__heading {
 }
 
 .leading__btn {
-  padding: 20px 55px;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-
   justify-self: end;
 }
