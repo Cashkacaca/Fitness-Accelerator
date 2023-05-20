@@ -624,6 +624,39 @@ button,
   }
 }
 
+.btn--video-preview {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+  cursor: pointer;
+}
+.btn--video-preview svg {
+  -webkit-transform: translate(2px, 1px);
+      -ms-transform: translate(2px, 1px);
+          transform: translate(2px, 1px);
+}
+.btn--video-preview::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -14px;
+  right: 0;
+  margin: auto;
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(237, 2, 51, 0.2)), to(rgba(0, 62, 183, 0.2)));
+  background: -o-linear-gradient(left, rgba(237, 2, 51, 0.2), rgba(0, 62, 183, 0.2));
+  background: linear-gradient(to right, rgba(237, 2, 51, 0.2), rgba(0, 62, 183, 0.2));
+  -webkit-mask-image: url(../img/Ellipse.png);
+          mask-image: url(../img/Ellipse.png);
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1548,6 +1581,87 @@ h1.leading__heading {
   .leading__img-wrap {
     display: none;
   }
+}
+
+.gym__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 120px 0 235px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+  grid-template-columns: 35% 65%;
+  -webkit-column-gap: 94px;
+     -moz-column-gap: 94px;
+          column-gap: 94px;
+}
+
+.gym__text-wrap {
+  width: 359px;
+  margin: 39px 0 0 60px;
+}
+
+h2.gym__heading {
+  margin: 0 0 7px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  color: #102654;
+  font-size: 48px;
+  line-height: 1.21;
+  letter-spacing: 0.03em;
+}
+
+h3.gym__heading {
+  margin: 0 0 39px;
+  font-weight: 400;
+  color: #102654;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.gym__text {
+  margin: 0 0 8px;
+  color: #102654;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.gym__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.gym__video-wrap {
+  width: 364px;
+  height: 228px;
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  left: 78px;
+  top: 54%;
+}
+
+.video-preview {
+  background-color: rgba(255, 255, 255, 0);
+  /* Св-во нужно для обеспечения кроссбраузерности */
+  background-image: -webkit-image-set(url("../img/video-preview@2x.jpg") 2x, url("../img/video-preview.jpg") 1x);
+  background-image: image-set(url("../img/video-preview@2x.jpg") 2x, url("../img/video-preview.jpg") 1x);
+  /* stylelint-disable declaration-block-no-duplicate-properties */
+  background-image: -webkit-image-set(url("../img/video-preview@2x.webp") type("image/webp") 2x, url("../img/video-preview.webp") type("image/webp") 1x, url("../img/video-preview@2x.jpg") type("image/jpeg") 2x, url("../img/video-preview.jpg") type("image/jpeg") 1x);
+  background-image: image-set(url("../img/video-preview@2x.webp") type("image/webp") 2x, url("../img/video-preview.webp") type("image/webp") 1x, url("../img/video-preview@2x.jpg") type("image/jpeg") 2x, url("../img/video-preview.jpg") type("image/jpeg") 1x);
+  /* stylelint-enable declaration-block-no-duplicate-properties */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.video-preview__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 /* @mixin hover-focus {

@@ -1,0 +1,13 @@
+.video-preview {
+  @include adaptive-bg(rgba(255, 255, 255, 0), video-preview);
+  z-index: 1;
+}
+
+.video-preview__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
