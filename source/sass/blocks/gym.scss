@@ -6,11 +6,34 @@
   display: grid;
   grid-template-columns: 35% 65%;
   column-gap: 94px;
+
+  @include vp-1199 {
+    padding: 101px 0 235px;
+    grid-template-columns: 1fr;
+    row-gap: 34px;
+  }
+
+  @include vp-767 {
+    padding: 64px 0 235px;
+    row-gap: 40px;
+  }
 }
 
 .gym__text-wrap {
   width: 359px;
   margin: 39px 0 0 60px;
+
+  @include vp-1199 {
+    width: 514px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: -15px;
+    text-align: left;
+  }
 }
 
 h2.gym__heading {
@@ -21,6 +44,16 @@ h2.gym__heading {
   font-size: 48px;
   line-height: 1.21;
   letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    margin: 0 0 -2px -16px;
+    font-size: 42px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 4px;
+    font-size: 32px;
+  }
 }
 
 h3.gym__heading {
@@ -29,10 +62,19 @@ h3.gym__heading {
   color: $dark-text;
   font-size: 18px;
   line-height: 1.5;
+
+  @include vp-1199 {
+    margin-bottom: 35px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
 }
 
 .gym__text {
   margin: 0 0 8px;
+  font-weight: 300;
   color: $dark-text;
   font-size: 16px;
   line-height: 1.5;
@@ -40,14 +82,45 @@ h3.gym__heading {
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @include vp-1199 {
+    &--hiden {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    padding-right: 28px;
+  }
+}
+
+.gym__img-wrap {
+  @include vp-767 {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+}
+
+.gym__img-wrap img {
+  @include vp-1199 {
+    width: 100%;
+  }
 }
 
 .gym__video-wrap {
-  width: 364px;
-  height: 228px;
   position: absolute;
   margin: 0 auto;
   right: 0;
   left: 78px;
   top: 54%;
+
+  @include vp-1199 {
+    left: 0;
+    top: 64.8%;
+  }
+
+  @include vp-767 {
+    position: relative;
+    top: 0;
+  }
 }
