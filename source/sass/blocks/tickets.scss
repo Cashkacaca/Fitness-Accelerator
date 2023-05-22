@@ -1,0 +1,19 @@
+.tickets {
+  background: $color-periwinkle-crayola;
+}
+
+.tickets__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tickets__heading {
+  margin: 0 auto;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  color: $dark-text;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}

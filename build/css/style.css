@@ -685,8 +685,8 @@ button,
   background: -webkit-gradient(linear, left top, right top, from(rgb(237, 2, 51)), to(rgb(0, 62, 183)));
   background: -o-linear-gradient(left, rgb(237, 2, 51), rgb(0, 62, 183));
   background: linear-gradient(to right, rgb(237, 2, 51), rgb(0, 62, 183));
-  -webkit-mask-image: url("../img/svg/ellipse-button-preview.svg");
-          mask-image: url("../img/svg/ellipse-button-preview.svg");
+  -webkit-mask-image: url("../img/sprite.svg#ellipse-button-preview");
+          mask-image: url("../img/sprite.svg#ellipse-button-preview");
 }
 @media (max-width: 1199px) {
   .btn--video-preview::after {
@@ -1817,6 +1817,26 @@ h3.gym__heading {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.tickets {
+  background: #f8f9fc;
+}
+
+.tickets__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tickets__heading {
+  margin: 0 auto;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  color: #102654;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 /* @mixin hover-focus {
