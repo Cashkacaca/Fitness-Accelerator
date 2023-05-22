@@ -659,9 +659,16 @@ button,
   .btn--video-preview svg {
     width: 10px;
     height: 11px;
-    -webkit-transform: translate(1px, 0px);
-        -ms-transform: translate(1px, 0px);
-            transform: translate(1px, 0px);
+    -webkit-transform: translate(1px, 0);
+        -ms-transform: translate(1px, 0);
+            transform: translate(1px, 0);
+  }
+}
+@media (max-width: 767px) {
+  .btn--video-preview svg {
+    -webkit-transform: translate(1px, 1px);
+        -ms-transform: translate(1px, 1px);
+            transform: translate(1px, 1px);
   }
 }
 .btn--video-preview::after {
@@ -675,17 +682,24 @@ button,
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(237, 2, 51, 0.2)), to(rgba(0, 62, 183, 0.2)));
-  background: -o-linear-gradient(left, rgba(237, 2, 51, 0.2), rgba(0, 62, 183, 0.2));
-  background: linear-gradient(to right, rgba(237, 2, 51, 0.2), rgba(0, 62, 183, 0.2));
-  -webkit-mask-image: url(../img/Ellipse.png);
-          mask-image: url(../img/Ellipse.png);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(237, 2, 51)), to(rgb(0, 62, 183)));
+  background: -o-linear-gradient(left, rgb(237, 2, 51), rgb(0, 62, 183));
+  background: linear-gradient(to right, rgb(237, 2, 51), rgb(0, 62, 183));
+  -webkit-mask-image: url("../img/svg/ellipse-button-preview.svg");
+          mask-image: url("../img/svg/ellipse-button-preview.svg");
 }
 @media (max-width: 1199px) {
   .btn--video-preview::after {
     width: 73px;
     height: 73px;
     left: -10px;
+  }
+}
+@media (max-width: 767px) {
+  .btn--video-preview::after {
+    -webkit-transform: translate(-1px, 1px);
+        -ms-transform: translate(-1px, 1px);
+            transform: translate(-1px, 1px);
   }
 }
 
