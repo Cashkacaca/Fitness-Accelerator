@@ -5,11 +5,13 @@
 .tickets__wrapper {
   max-width: 1160px;
   margin: 0 auto;
+  padding: 121px 0 12px;
   text-align: center;
 }
 
 .tickets__heading {
-  margin: 0 auto;
+  margin: 0 auto 6px;
+  padding-right: 5px;
   font-family: $ff-alumni;
   font-weight: 600;
   color: $dark-text;
