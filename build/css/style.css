@@ -373,7 +373,7 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 @media screen and (max-width: 767px) {
   .tabs__controls {
@@ -853,6 +853,18 @@ button,
   width: 100%;
   height: 2px;
   background-color: #d10a42;
+}
+
+.btn--product-card {
+  padding: 24px 44px;
+  background-color: inherit;
+  border: solid 2px #102654;
+  font-weight: 700;
+  color: #102654;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .modal {
@@ -2007,7 +2019,62 @@ h3.gym__heading {
 }
 
 .product-card {
+  padding: 63px 40px 67px;
   background-color: #ffffff;
+  text-align: center;
+}
+
+.product-card__heading {
+  margin: 0 0 11px;
+  color: #102654;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.product-card__description {
+  margin: 0 0 65px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  color: #495a7d;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.product-card__price {
+  margin-bottom: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-card__price span {
+  margin-right: 15px;
+  font-weight: 700;
+  color: #103aae;
+  font-size: 60px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+.product-card__price span::after {
+  position: absolute;
+  left: -18px;
+  bottom: -6px;
+  content: attr(title);
+  font-size: 100px;
+  color: #e8e8e8;
+  opacity: 0.48;
+  z-index: -1;
+}
+
+.product-card__price svg {
+  z-index: 1;
 }
 
 /* @mixin hover-focus {

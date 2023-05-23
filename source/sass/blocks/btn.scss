@@ -146,3 +146,15 @@
     background-color: #d10a42;
   }
 }
+
+.btn--product-card {
+  padding: 24px 44px;
+  background-color: inherit;
+  border: solid 2px $dark-text;
+  font-weight: 700;
+  color: $dark-text;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
