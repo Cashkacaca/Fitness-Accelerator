@@ -159,8 +159,9 @@
   text-transform: uppercase;
 }
 
-.product-card:focus-within .btn--product-card,
-.product-card:hover .btn--product-card {
+.product-card:hover .btn--product-card,
+.product-card:focus-within .btn--product-card {
+  padding-top: 26px;
   border: none;
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   color: $color-default-white;

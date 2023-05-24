@@ -1,11 +1,12 @@
 .tickets {
   background: $color-periwinkle-crayola;
+  position: relative;
 }
 
 .tickets__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 121px 0 12px;
+  padding: 121px 0 119px;
   text-align: center;
 }
 
@@ -26,5 +27,11 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
+  gap: 40px;
+}
+
+.tickets__image {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
 }

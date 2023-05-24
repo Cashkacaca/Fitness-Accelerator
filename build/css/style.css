@@ -414,7 +414,6 @@ template {
 }
 
 .tabs__content {
-  margin-bottom: 41px;
   -webkit-transition: height 0.3s;
   -o-transition: height 0.3s;
   transition: height 0.3s;
@@ -867,8 +866,9 @@ button,
   text-transform: uppercase;
 }
 
-.product-card:focus-within .btn--product-card,
-.product-card:hover .btn--product-card {
+.product-card:hover .btn--product-card,
+.product-card:focus-within .btn--product-card {
+  padding-top: 26px;
   border: none;
   background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
@@ -1993,12 +1993,13 @@ h3.gym__heading {
 
 .tickets {
   background: #f8f9fc;
+  position: relative;
 }
 
 .tickets__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 121px 0 12px;
+  padding: 121px 0 119px;
   text-align: center;
 }
 
@@ -2021,9 +2022,13 @@ h3.gym__heading {
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
+  gap: 40px;
+}
+
+.tickets__image {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
 }
 
 .product-card {
@@ -2031,7 +2036,7 @@ h3.gym__heading {
   background-color: #ffffff;
   text-align: center;
 }
-.product-card:focus-within, .product-card:hover {
+.product-card:hover, .product-card:focus-within {
   padding: 56px 33px 60px;
   border: 7px solid red;
   -o-border-image: -o-linear-gradient(left top, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
