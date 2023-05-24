@@ -867,6 +867,14 @@ button,
   text-transform: uppercase;
 }
 
+.product-card:focus-within .btn--product-card,
+.product-card:hover .btn--product-card {
+  border: none;
+  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: #ffffff;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -2022,6 +2030,13 @@ h3.gym__heading {
   padding: 63px 40px 67px;
   background-color: #ffffff;
   text-align: center;
+}
+.product-card:focus-within, .product-card:hover {
+  padding: 56px 33px 60px;
+  border: 7px solid red;
+  -o-border-image: -o-linear-gradient(left top, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
+     border-image: -webkit-gradient(linear, left top, right bottom, from(rgb(209, 10, 66)), to(rgb(0, 53, 159))) 1;
+     border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
 }
 
 .product-card__heading {

@@ -2,6 +2,14 @@
   padding: 63px 40px 67px;
   background-color: $color-default-white;
   text-align: center;
+
+  &:focus-within,
+  &:hover {
+    padding: 56px 33px 60px;
+    border: 7px solid red;
+    border-image: linear-gradient(to right bottom, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1)) 1;
+    // border-image-slice: 1;
+  }
 }
 
 .product-card__heading {
@@ -48,6 +56,6 @@
   }
 }
 
-.product-card__price svg{
+.product-card__price svg {
   z-index: 1;
 }

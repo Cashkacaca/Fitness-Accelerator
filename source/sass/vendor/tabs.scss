@@ -20,7 +20,6 @@
   opacity: 0.5;
   min-width: auto;
   justify-content: center;
-  // width: 25%;
 
   @media screen and (max-width: 1023px) {
     margin: 0 10px;
@@ -50,36 +49,7 @@
 }
 
 .tabs__element {
-  // padding: 25px;
   width: 100%;
-
-  // @media screen and (max-width: 767px) {
-  //   padding: 15px;
-  // }
-
-  // p {
-  //   margin: 0;
-
-  //   &:not(:last-child) {
-  //     margin: 0 0 20px 0;
-  //   }
-  // }
-
-  // &:nth-child(1) {
-  //   background-color: rgb(250, 235, 215);
-  // }
-
-  // &:nth-child(2) {
-  //   background-color: rgb(229, 250, 215);
-  // }
-
-  // &:nth-child(3) {
-  //   background-color: rgb(180, 188, 233);
-  // }
-
-  // &:nth-child(4) {
-  //   background-color: rgb(255, 187, 204);
-  // }
 }
 
 .tabs--unset .tabs__content {
