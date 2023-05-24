@@ -5,10 +5,14 @@
 
   &:hover,
   &:focus-within {
-    padding: 56px 33px 60px;
-    border: 7px solid red;
+    padding: 50px 33px 60px;
+    border: 7px solid rgb(209, 10, 66);
     border-image: linear-gradient(to right bottom, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1)) 1;
     // border-image-slice: 1;
+
+    @include vp-1199 {
+      padding-bottom: 62px;
+    }
   }
 }
 
@@ -16,11 +20,17 @@
   margin: 0 0 11px;
   color: $dark-text;
   font-size: 26px;
-  line-height: 1.1;
+  line-height: 1.12;
+}
+
+.product-card:hover .product-card__heading,
+.product-card:focus-within .product-card__heading {
+  margin-bottom: 6px;
+  line-height: 1.54;
 }
 
 .product-card__description {
-  margin: 0 0 65px;
+  margin: 0 0 64px;
   font-family: $ff-roboto;
   font-weight: 400;
   color: #495a7d;

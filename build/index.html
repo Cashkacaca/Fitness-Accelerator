@@ -249,11 +249,14 @@
           <div class="tickets__image">
             <picture>
               <source type="image/webp"
-                srcset="img/pancakes-for-barbell.webp 1x, img/pancakes-for-barbell@2x.webp 2x">
+                srcset="img/pancakes-for-barbell-tablet.webp 1x, img/pancakes-for-barbell-tablet@2x.webp 2x"
+                media="(max-width: 1199px)">
+              <source type="image/webp" srcset="img/pancakes-for-barbell.webp 1x, img/pancakes-for-barbell@2x.webp 2x">
 
-              <img src="img/pancakes-for-barbell.png"
-                srcset="img/pancakes-for-barbell@2x.png 2x" width="287" height="494"
-                alt="Блины для штанги.">
+              <source srcset="img/pancakes-for-barbell-tablet.png, img/pancakes-for-barbell-tablet@2x.png 2x"
+                type="image/jpeg" media="(max-width: 1199px)">
+              <img src="img/pancakes-for-barbell.png" srcset="img/pancakes-for-barbell@2x.png 2x" width="287"
+                height="494" alt="Блины для штанги.">
             </picture>
           </div>
         </div>

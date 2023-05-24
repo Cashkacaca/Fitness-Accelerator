@@ -375,6 +375,11 @@ template {
   width: 100%;
   margin-bottom: 41px;
 }
+@media screen and (max-width: 1199px) {
+  .tabs__controls {
+    margin-bottom: 47px;
+  }
+}
 @media screen and (max-width: 767px) {
   .tabs__controls {
     -ms-flex-wrap: wrap;
@@ -392,17 +397,9 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1199px) {
   .tabs__control {
-    margin: 0 10px;
-    padding: 15px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .tabs__control {
-    margin: 10px 2% 0;
-    padding: 10px;
-    width: 45%;
+    margin: 0 26px;
   }
 }
 .tabs__control.is-active {
@@ -837,13 +834,29 @@ button,
   height: 2px;
   background-color: rgba(120, 120, 120, 0.2);
 }
+@media (max-width: 1199px) {
+  .btn--tabs::after {
+    content: "";
+    width: calc(100% + 52px);
+  }
+}
 .btn--tabs:first-of-type::after {
   width: calc(100% + 23px);
   left: 0;
 }
+@media (max-width: 1199px) {
+  .btn--tabs:first-of-type::after {
+    width: calc(100% + 26px);
+  }
+}
 .btn--tabs:last-of-type::after {
   width: calc(100% + 23px);
   right: 0;
+}
+@media (max-width: 1199px) {
+  .btn--tabs:last-of-type::after {
+    width: calc(100% + 26px);
+  }
 }
 .btn--tabs.is-active::before {
   position: absolute;
@@ -852,6 +865,11 @@ button,
   width: 100%;
   height: 2px;
   background-color: #d10a42;
+}
+@media (max-width: 1199px) {
+  .btn--tabs {
+    font-size: 18px;
+  }
 }
 
 .btn--product-card {
@@ -870,8 +888,8 @@ button,
 .product-card:focus-within .btn--product-card {
   padding-top: 26px;
   border: none;
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
 }
 
@@ -2002,6 +2020,11 @@ h3.gym__heading {
   padding: 121px 0 119px;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .tickets__wrapper {
+    padding: 49px 0 100px;
+  }
+}
 
 .tickets__heading {
   margin: 0 auto 6px;
@@ -2012,6 +2035,13 @@ h3.gym__heading {
   font-size: 54px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .tickets__heading {
+    margin-bottom: 10px;
+    padding-right: 14px;
+    font-size: 42px;
+  }
 }
 
 .tickets__list {
@@ -2024,11 +2054,32 @@ h3.gym__heading {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+@media (max-width: 1199px) {
+  .tickets__list {
+    -ms-grid-columns: 442px;
+    grid-template-columns: 442px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .tickets__image {
   position: absolute;
   right: 0;
-  bottom: -150px;
+  bottom: -151px;
+}
+@media (max-width: 1199px) {
+  .tickets__image {
+    bottom: -125px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .tickets__image img {
+    width: 347px;
+    height: 444px;
+  }
 }
 
 .product-card {
@@ -2037,22 +2088,33 @@ h3.gym__heading {
   text-align: center;
 }
 .product-card:hover, .product-card:focus-within {
-  padding: 56px 33px 60px;
-  border: 7px solid red;
+  padding: 50px 33px 60px;
+  border: 7px solid rgb(209, 10, 66);
   -o-border-image: -o-linear-gradient(left top, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
      border-image: -webkit-gradient(linear, left top, right bottom, from(rgb(209, 10, 66)), to(rgb(0, 53, 159))) 1;
      border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
+}
+@media (max-width: 1199px) {
+  .product-card:hover, .product-card:focus-within {
+    padding-bottom: 62px;
+  }
 }
 
 .product-card__heading {
   margin: 0 0 11px;
   color: #102654;
   font-size: 26px;
-  line-height: 1.1;
+  line-height: 1.12;
+}
+
+.product-card:hover .product-card__heading,
+.product-card:focus-within .product-card__heading {
+  margin-bottom: 6px;
+  line-height: 1.54;
 }
 
 .product-card__description {
-  margin: 0 0 65px;
+  margin: 0 0 64px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   color: #495a7d;

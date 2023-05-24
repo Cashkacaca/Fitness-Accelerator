@@ -8,6 +8,10 @@
   margin: 0 auto;
   padding: 121px 0 119px;
   text-align: center;
+
+  @include vp-1199 {
+    padding: 49px 0 100px;
+  }
 }
 
 .tickets__heading {
@@ -19,6 +23,12 @@
   font-size: 54px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    margin-bottom: 10px;
+    padding-right: 14px;
+    font-size: 42px;
+  }
 }
 
 .tickets__list {
@@ -28,10 +38,26 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: 442px;
+    justify-content: center;
+  }
 }
 
 .tickets__image {
   position: absolute;
   right: 0;
-  bottom: -150px;
+  bottom: -151px;
+
+  @include vp-1199 {
+    bottom: -125px;
+  }
+}
+
+.tickets__image img {
+  @include vp-1199 {
+    width: 347px;
+    height: 444px;
+  }
 }

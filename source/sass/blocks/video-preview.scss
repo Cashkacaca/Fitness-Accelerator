@@ -1,6 +1,7 @@
 .video-preview {
   width: 364px;
   height: 228px;
+
   @include adaptive-bg(rgba(255, 255, 255, 0), video-preview);
   z-index: 1;
 
@@ -12,6 +13,7 @@
   @include vp-767 {
     width: calc(100% + 30px);
     margin-left: -15px;
+
     @include adaptive-bg(rgba(255, 255, 255, 0), video-preview-mobil);
   }
 }
