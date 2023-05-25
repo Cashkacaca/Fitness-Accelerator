@@ -402,6 +402,17 @@ template {
     margin: 0 26px;
   }
 }
+@media screen and (max-width: 767px) {
+  .tabs__control {
+    margin: 0 21px;
+  }
+  .tabs__control:first-of-type {
+    margin-left: 0;
+  }
+  .tabs__control:last-of-type {
+    margin-right: 0;
+  }
+}
 .tabs__control.is-active {
   opacity: 1;
   pointer-events: none;
@@ -840,6 +851,12 @@ button,
     width: calc(100% + 52px);
   }
 }
+@media (max-width: 767px) {
+  .btn--tabs::after {
+    bottom: -5px;
+    width: calc(100% + 42px);
+  }
+}
 .btn--tabs:first-of-type::after {
   width: calc(100% + 23px);
   left: 0;
@@ -847,6 +864,11 @@ button,
 @media (max-width: 1199px) {
   .btn--tabs:first-of-type::after {
     width: calc(100% + 26px);
+  }
+}
+@media (max-width: 767px) {
+  .btn--tabs:first-of-type::after {
+    width: calc(100% + 21px);
   }
 }
 .btn--tabs:last-of-type::after {
@@ -858,6 +880,11 @@ button,
     width: calc(100% + 26px);
   }
 }
+@media (max-width: 767px) {
+  .btn--tabs:last-of-type::after {
+    width: calc(100% + 21px);
+  }
+}
 .btn--tabs.is-active::before {
   position: absolute;
   bottom: -3px;
@@ -866,9 +893,19 @@ button,
   height: 2px;
   background-color: #d10a42;
 }
+@media (max-width: 767px) {
+  .btn--tabs.is-active::before {
+    bottom: -5px;
+  }
+}
 @media (max-width: 1199px) {
   .btn--tabs {
     font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .btn--tabs {
+    font-size: 16px;
   }
 }
 
@@ -1842,7 +1879,7 @@ h1.leading__heading {
 }
 @media (max-width: 767px) {
   .gym__wrapper {
-    padding: 64px 0 235px;
+    padding: 64px 0 70px;
     row-gap: 40px;
   }
 }
@@ -2025,6 +2062,11 @@ h3.gym__heading {
     padding: 49px 0 100px;
   }
 }
+@media (max-width: 767px) {
+  .tickets__wrapper {
+    padding: 64px 0 100px;
+  }
+}
 
 .tickets__heading {
   margin: 0 auto 6px;
@@ -2041,6 +2083,13 @@ h3.gym__heading {
     margin-bottom: 10px;
     padding-right: 14px;
     font-size: 42px;
+    line-height: 1.19;
+  }
+}
+@media (max-width: 767px) {
+  .tickets__heading {
+    padding-right: 10px;
+    font-size: 32px;
   }
 }
 
@@ -2063,6 +2112,13 @@ h3.gym__heading {
             justify-content: center;
   }
 }
+@media (max-width: 767px) {
+  .tickets__list {
+    -ms-grid-columns: minmax(290px, 1fr);
+    grid-template-columns: minmax(290px, 1fr);
+    gap: 35px;
+  }
+}
 
 .tickets__image {
   position: absolute;
@@ -2072,6 +2128,11 @@ h3.gym__heading {
 @media (max-width: 1199px) {
   .tickets__image {
     bottom: -125px;
+  }
+}
+@media (max-width: 767px) {
+  .tickets__image {
+    display: none;
   }
 }
 
@@ -2099,6 +2160,11 @@ h3.gym__heading {
     padding-bottom: 62px;
   }
 }
+@media (max-width: 767px) {
+  .product-card {
+    padding: 43px 40px 67px;
+  }
+}
 
 .product-card__heading {
   margin: 0 0 11px;
@@ -2106,11 +2172,24 @@ h3.gym__heading {
   font-size: 26px;
   line-height: 1.12;
 }
+@media (max-width: 767px) {
+  .product-card__heading {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+}
 
 .product-card:hover .product-card__heading,
 .product-card:focus-within .product-card__heading {
   margin-bottom: 6px;
   line-height: 1.54;
+}
+@media (max-width: 767px) {
+  .product-card:hover .product-card__heading,
+.product-card:focus-within .product-card__heading {
+    line-height: 1.1;
+  }
 }
 
 .product-card__description {
@@ -2120,6 +2199,11 @@ h3.gym__heading {
   color: #495a7d;
   font-size: 16px;
   line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .product-card__description {
+    margin-bottom: 53px;
+  }
 }
 
 .product-card__price {
@@ -2144,6 +2228,11 @@ h3.gym__heading {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .product-card__price span {
+    font-size: 48px;
+  }
+}
 .product-card__price span::after {
   position: absolute;
   left: -18px;
@@ -2154,9 +2243,20 @@ h3.gym__heading {
   opacity: 0.48;
   z-index: -1;
 }
+@media (max-width: 767px) {
+  .product-card__price span::after {
+    font-size: 80px;
+  }
+}
 
 .product-card__price svg {
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .product-card__price svg {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 /* @mixin hover-focus {
