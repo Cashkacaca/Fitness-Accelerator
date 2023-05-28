@@ -3,6 +3,11 @@
   display: grid;
   grid-template-columns: 500px 660px;
   justify-content: center;
+
+  @include vp-1199 {
+    padding: 100px 0 50px;
+    grid-template-columns: minmax(292px, 1fr) minmax(386px, 1fr);
+  }
 }
 
 .stock__text-wrapper {
@@ -13,6 +18,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
+
+  @include vp-1199 {
+    padding: 51px 45px;
+    column-gap: 29px;
+  }
 }
 
 .stock__heading {
@@ -27,6 +37,11 @@
   line-height: 0.96;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @include vp-1199 {
+    min-width: 117px;
+    font-size: 48px;
+  }
 }
 
 .stock__text {
@@ -35,6 +50,11 @@
 
   font-size: 18px;
   line-height: 1.5;
+
+  @include vp-1199 {
+    margin-top: -25px;
+    font-size: 12px;
+  }
 }
 
 .stock__date {
@@ -46,6 +66,10 @@
 .stock__date dt {
   font-size: 18px;
   line-height: 1.5;
+
+  @include vp-1199 {
+    font-size: 12px;
+  }
 }
 
 .stock__date dd {
@@ -59,10 +83,21 @@
   font-size: 40px;
   line-height: 1.5;
 
+  @include vp-1199 {
+    margin: 0;
+    font-size: 24px;
+  }
+
   & .small {
     margin-left: 7px;
     font-weight: 400;
     font-size: 14px;
+
+    @include vp-1199 {
+      margin-left: 4px;
+      font-size: 10px;
+      line-height: 1.2;
+    }
   }
 
   &::before {
@@ -72,10 +107,18 @@
     width: 100%;
     height: 1px;
     background-color: $color-default-white;
+
+    @include vp-1199 {
+      top: 2px;
+    }
   }
 }
 
 .stock__btn {
   grid-column: 1 / -1;
   transform: translate(-2px, 1px);
+}
+
+.stock__image-wrapper {
+  align-self: center;
 }

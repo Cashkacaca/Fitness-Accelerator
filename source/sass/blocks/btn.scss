@@ -219,4 +219,11 @@
   line-height: 1.17;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @include vp-1199 {
+    padding: 1px 20px;
+    border-width: 2px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
 }

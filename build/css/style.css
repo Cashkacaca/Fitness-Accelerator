@@ -949,6 +949,14 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+@media (max-width: 1199px) {
+  .btn--stock {
+    padding: 1px 20px;
+    border-width: 2px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
 
 .modal {
   position: fixed;
@@ -2302,6 +2310,13 @@ h3.gym__heading {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 1199px) {
+  .stock__wrapper {
+    padding: 100px 0 50px;
+    -ms-grid-columns: minmax(292px, 1fr) minmax(386px, 1fr);
+    grid-template-columns: minmax(292px, 1fr) minmax(386px, 1fr);
+  }
+}
 
 .stock__text-wrapper {
   padding: 86px 78px;
@@ -2314,6 +2329,14 @@ h3.gym__heading {
   -webkit-column-gap: 50px;
      -moz-column-gap: 50px;
           column-gap: 50px;
+}
+@media (max-width: 1199px) {
+  .stock__text-wrapper {
+    padding: 51px 45px;
+    -webkit-column-gap: 29px;
+       -moz-column-gap: 29px;
+            column-gap: 29px;
+  }
 }
 
 .stock__heading {
@@ -2332,12 +2355,24 @@ h3.gym__heading {
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .stock__heading {
+    min-width: 117px;
+    font-size: 48px;
+  }
+}
 
 .stock__text {
   margin: -35px 0 0;
   grid-column: 1/-1;
   font-size: 18px;
   line-height: 1.5;
+}
+@media (max-width: 1199px) {
+  .stock__text {
+    margin-top: -25px;
+    font-size: 12px;
+  }
 }
 
 .stock__date {
@@ -2351,6 +2386,11 @@ h3.gym__heading {
 .stock__date dt {
   font-size: 18px;
   line-height: 1.5;
+}
+@media (max-width: 1199px) {
+  .stock__date dt {
+    font-size: 12px;
+  }
 }
 
 .stock__date dd {
@@ -2369,10 +2409,23 @@ h3.gym__heading {
   font-size: 40px;
   line-height: 1.5;
 }
+@media (max-width: 1199px) {
+  .stock__date dd {
+    margin: 0;
+    font-size: 24px;
+  }
+}
 .stock__date dd .small {
   margin-left: 7px;
   font-weight: 400;
   font-size: 14px;
+}
+@media (max-width: 1199px) {
+  .stock__date dd .small {
+    margin-left: 4px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
 }
 .stock__date dd::before {
   position: absolute;
@@ -2382,12 +2435,23 @@ h3.gym__heading {
   height: 1px;
   background-color: #ffffff;
 }
+@media (max-width: 1199px) {
+  .stock__date dd::before {
+    top: 2px;
+  }
+}
 
 .stock__btn {
   grid-column: 1/-1;
   -webkit-transform: translate(-2px, 1px);
       -ms-transform: translate(-2px, 1px);
           transform: translate(-2px, 1px);
+}
+
+.stock__image-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* @mixin hover-focus {
