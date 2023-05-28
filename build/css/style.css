@@ -382,6 +382,7 @@ template {
 }
 @media screen and (max-width: 767px) {
   .tabs__controls {
+    margin-bottom: 39px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -490,6 +491,7 @@ html {
   line-height: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -2015,14 +2017,15 @@ h3.gym__heading {
 }
 @media (max-width: 1199px) {
   .video-preview {
-    width: 266px;
-    height: 167px;
+    width: 39.3%;
+    height: 18.4%;
   }
 }
 @media (max-width: 767px) {
   .video-preview {
     width: calc(100% + 30px);
     margin-left: -15px;
+    padding-top: 52.18%;
     background-color: rgba(255, 255, 255, 0);
     /* Св-во нужно для обеспечения кроссбраузерности */
     background-image: -webkit-image-set(url("../img/video-preview-mobil@2x.jpg") 2x, url("../img/video-preview-mobil.jpg") 1x);
@@ -2064,7 +2067,7 @@ h3.gym__heading {
 }
 @media (max-width: 767px) {
   .tickets__wrapper {
-    padding: 64px 0 100px;
+    padding: 64px 0 69px;
   }
 }
 
@@ -2161,8 +2164,13 @@ h3.gym__heading {
   }
 }
 @media (max-width: 767px) {
+  .product-card:hover, .product-card:focus-within {
+    padding: 44px 33px 50px;
+  }
+}
+@media (max-width: 767px) {
   .product-card {
-    padding: 43px 40px 67px;
+    padding: 51px 40px 54px;
   }
 }
 
@@ -2188,6 +2196,7 @@ h3.gym__heading {
 @media (max-width: 767px) {
   .product-card:hover .product-card__heading,
 .product-card:focus-within .product-card__heading {
+    margin-bottom: 8px;
     line-height: 1.1;
   }
 }
@@ -2218,6 +2227,11 @@ h3.gym__heading {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 767px) {
+  .product-card__price {
+    margin-bottom: 30px;
+  }
+}
 
 .product-card__price span {
   margin-right: 15px;
@@ -2230,6 +2244,7 @@ h3.gym__heading {
 }
 @media (max-width: 767px) {
   .product-card__price span {
+    margin-right: 10px;
     font-size: 48px;
   }
 }
