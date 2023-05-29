@@ -1,0 +1,30 @@
+.instructor__wrapper {
+  max-width: 1160px;
+}
+
+.instructor__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.instructor__item {
+  width: 260px;
+  height: 294px;
+
+  &--ann {
+    @include adaptive-bg(#b9c0cf, instructors/Ann);
+  }
+
+  &--alex {
+    @include adaptive-bg(#b9c0cf, instructors/Alex);
+  }
+
+  &--aleksandr {
+    @include adaptive-bg(#b9c0cf, instructors/aleksandr);
+  }
+
+  &--mary {
+    @include adaptive-bg(#b9c0cf, instructors/Mary);
+  }
+}
