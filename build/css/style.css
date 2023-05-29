@@ -957,6 +957,11 @@ button,
     line-height: 1.2;
   }
 }
+@media (max-width: 767px) {
+  .btn--stock {
+    padding: 12px 20px;
+  }
+}
 
 .modal {
   position: fixed;
@@ -2051,7 +2056,7 @@ h3.gym__heading {
   .video-preview {
     width: calc(100% + 30px);
     margin-left: -15px;
-    padding-top: 52.18%;
+    padding-top: 57.4%;
     background-color: rgba(255, 255, 255, 0);
     /* Св-во нужно для обеспечения кроссбраузерности */
     background-image: -webkit-image-set(url("../img/video-preview-mobil@2x.jpg") 2x, url("../img/video-preview-mobil.jpg") 1x);
@@ -2145,7 +2150,7 @@ h3.gym__heading {
   .tickets__list {
     -ms-grid-columns: minmax(290px, 1fr);
     grid-template-columns: minmax(290px, 1fr);
-    gap: 35px;
+    gap: 34px;
   }
 }
 
@@ -2191,7 +2196,7 @@ h3.gym__heading {
 }
 @media (max-width: 767px) {
   .product-card:hover, .product-card:focus-within {
-    padding: 44px 33px 50px;
+    padding: 44px 33px 49px;
   }
 }
 @media (max-width: 767px) {
@@ -2222,7 +2227,7 @@ h3.gym__heading {
 @media (max-width: 767px) {
   .product-card:hover .product-card__heading,
 .product-card:focus-within .product-card__heading {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     line-height: 1.1;
   }
 }
@@ -2256,6 +2261,13 @@ h3.gym__heading {
 @media (max-width: 767px) {
   .product-card__price {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-card:hover .product-card__price,
+.product-card:focus-within .product-card__price {
+    margin-bottom: 31px;
   }
 }
 
@@ -2317,6 +2329,13 @@ h3.gym__heading {
     grid-template-columns: minmax(292px, 1fr) minmax(386px, 1fr);
   }
 }
+@media (max-width: 767px) {
+  .stock__wrapper {
+    padding: 72px 0 50px;
+    -ms-grid-columns: minmax(290px, 1fr);
+    grid-template-columns: minmax(290px, 1fr);
+  }
+}
 
 .stock__text-wrapper {
   padding: 86px 78px;
@@ -2332,7 +2351,7 @@ h3.gym__heading {
 }
 @media (max-width: 1199px) {
   .stock__text-wrapper {
-    padding: 51px 45px;
+    padding: 51px 45px 52px;
     -webkit-column-gap: 29px;
        -moz-column-gap: 29px;
             column-gap: 29px;
@@ -2372,6 +2391,11 @@ h3.gym__heading {
   .stock__text {
     margin-top: -25px;
     font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .stock__text {
+    margin: 0 0 28px;
   }
 }
 
@@ -2452,6 +2476,11 @@ h3.gym__heading {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+@media (max-width: 767px) {
+  .stock__image-wrapper img {
+    width: 100%;
+  }
 }
 
 /* @mixin hover-focus {

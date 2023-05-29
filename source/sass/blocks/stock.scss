@@ -8,6 +8,11 @@
     padding: 100px 0 50px;
     grid-template-columns: minmax(292px, 1fr) minmax(386px, 1fr);
   }
+
+  @include vp-767 {
+    padding: 72px 0 50px;
+    grid-template-columns: minmax(290px, 1fr);
+  }
 }
 
 .stock__text-wrapper {
@@ -20,7 +25,7 @@
   column-gap: 50px;
 
   @include vp-1199 {
-    padding: 51px 45px;
+    padding: 51px 45px 52px;
     column-gap: 29px;
   }
 }
@@ -54,6 +59,10 @@
   @include vp-1199 {
     margin-top: -25px;
     font-size: 12px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 28px;
   }
 }
 
@@ -121,4 +130,10 @@
 
 .stock__image-wrapper {
   align-self: center;
+
+  & img {
+    @include vp-767 {
+      width: 100%;
+    }
+  }
 }

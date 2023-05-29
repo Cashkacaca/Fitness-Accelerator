@@ -15,13 +15,12 @@
     }
 
     @include vp-767 {
-      padding: 44px 33px 50px;
+      padding: 44px 33px 49px;
     }
   }
 
   @include vp-767 {
     padding: 51px 40px 54px;
-    // aspect-ratio: 221/224;
   }
 }
 
@@ -44,7 +43,7 @@
   line-height: 1.54;
 
   @include vp-767 {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     line-height: 1.1;
   }
 }
@@ -70,6 +69,13 @@
 
   @include vp-767 {
     margin-bottom: 30px;
+  }
+}
+
+.product-card:hover .product-card__price,
+.product-card:focus-within .product-card__price {
+  @include vp-767 {
+    margin-bottom: 31px;
   }
 }
 
